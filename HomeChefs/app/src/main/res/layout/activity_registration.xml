@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/textfield_reg_username"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Username"
+            android:backgroundTint="#000"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/textfield_phone"
+            android:layout_width="260dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Phone Number"
+            android:inputType="textPersonName"
+            android:backgroundTint="#000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textfield_email"
+            app:layout_constraintTop_toBottomOf="@+id/textfield_email" />
+
+        <EditText
+            android:id="@+id/textfield_email"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Email Address"
+            android:backgroundTint="#000"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textfield_confirmpassword"
+            app:layout_constraintStart_toStartOf="@+id/textfield_confirmpassword"
+            app:layout_constraintTop_toBottomOf="@+id/textfield_confirmpassword" />
+
+        <EditText
+            android:id="@+id/textfield_reg_password"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#000"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+        <EditText
+            android:id="@+id/textfield_confirmpassword"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="Confirm Password"
+            android:backgroundTint="#000"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/textfield_reg_password"
+            app:layout_constraintStart_toStartOf="@+id/textfield_reg_password"
+            app:layout_constraintTop_toBottomOf="@+id/textfield_reg_password" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Register"
+            android:backgroundTint="#000"
+            android:textSize="44sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="270dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:text="Register"
+            android:textColor="#C74130"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="@+id/textfield_phone"
+            app:layout_constraintStart_toStartOf="@+id/editText9"
+            app:layout_constraintTop_toBottomOf="@+id/textfield_phone" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#000"
+            android:editable="false"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="none"
+            android:selectAllOnFocus="false"
+            android:text="+1"
+            app:layout_constraintStart_toStartOf="@+id/textfield_email"
+            app:layout_constraintTop_toBottomOf="@+id/textfield_email" />
+
+        <TextView
+            android:id="@+id/backto_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/login_page"
+            android:textColor="#C74130"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btn_register"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            app:cardCornerRadius="50dp"
+            app:layout_constraintStart_toStartOf="@+id/textfield_reg_password"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground" />
+        </androidx.cardview.widget.CardView>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#000"
+            android:dropDownWidth="150dp"
+            android:dropDownSelector="@drawable/border"
+            android:popupBackground="@drawable/gradient"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="@+id/textfield_reg_username"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/textfield_reg_username" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

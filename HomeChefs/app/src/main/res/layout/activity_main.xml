@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:background="@drawable/gradient"
+    android:layout_height="fill_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/textfield_username"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="#000"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/textfield_password"
+            android:layout_width="270dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#000"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/textfield_username"
+            app:layout_constraintStart_toStartOf="@+id/textfield_username"
+            app:layout_constraintTop_toBottomOf="@+id/textfield_username" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textfield_username"
+            app:layout_constraintEnd_toStartOf="@+id/textfield_username"
+            app:layout_constraintTop_toTopOf="@+id/textfield_username"
+            app:srcCompat="@drawable/user"
+            tools:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:text="Login"
+            android:textSize="44sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingRight="5dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textfield_password"
+            app:layout_constraintEnd_toStartOf="@+id/textfield_password"
+            app:layout_constraintTop_toTopOf="@+id/textfield_password"
+            app:srcCompat="@drawable/lock" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="270dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/border"
+            android:text="Login"
+            android:textColor="#C74130"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="@+id/textfield_password"
+            app:layout_constraintStart_toStartOf="@+id/textfield_password"
+            app:layout_constraintTop_toBottomOf="@+id/textfield_password" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="270dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/border"
+            android:text="Register"
+            android:textColor="#C74130"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="@+id/btn_login"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/btn_login"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
